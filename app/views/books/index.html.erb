@@ -26,7 +26,7 @@
               <%= book.body %>
             </td>
             <td class=<%= "favorite-" + book.id.to_s %>><%= render 'favorites/favorite', book: book, user: current_user %></td>
-            <td><%= render 'book_comments/comment_count', book: book %></td>
+            <td class><%= render 'book_comments/comment_count', book: book %></td>
           </tr>
           <% end %>
         </tbody>
